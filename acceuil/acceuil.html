@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./acceuil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- le header de la page divisé en 3 div /logo/menu(none -> TEL)/hamb(none -> ORDI)-->
+    <header>
+
+        <div class="logo">
+            <p style="color: white;"><span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                ">A</span>tizan<span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                ">M</span>OKO</p>
+        </div>
+        <div class="menuinfo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./acceuil.html"  id="artu">Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="./artrecher.html">Artisants</a>
+                    </li>
+                    <li>
+                        <a href="./artisant.html">Ou trouver ?</a>
+                    </li>
+                    <li>
+                        <a href="./acceuil.html#footer">A propos</a>
+                    </li>
+                    <li>
+                        <a href="./acceuil.html#footer">Contact</a>
+                    </li>
+                    <!-- cette div profil sort si un artisant sincrit, il peut voir l'option profil -->
+                    <li>
+                        <a href="#" style="background-color: white;color: green;">Mon profil</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menuImage">
+            <img  src="./menu.png" style="filter: invert();" width="30px" alt="" id="croix">
+        </div>
+    </header>
+    <!-- la liste du menu ham qui sort lors du clique(none -> ORDI) -->
+    <div class="gramdmenu">
+        <div class="menuhambeur">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 20px;padding-bottom: 40px;color: white;">MENU</h1>
+            <div class="mnimage" id="acce">
+                <div class="imagmn1">
+                    <img src="./home.png"  width="20px" alt="">
+                </div>
+                <div class="imagmn2">
+                    <a href="./acceuil.html">Acceuil</a>
+                </div>
+            </div>
+            <div class="mnimage">
+                <div class="imagmn1">
+                    <img src="./vase.png"  width="20px" alt="">
+                </div>
+                <div class="imagmn2">
+                    <a href="./artrecher.html">Artisants</a>
+                </div>
+            </div>
+            <div class="mnimage">
+                <div class="imagmn1">
+                    <img src="./associ.png"  width="20px" alt="">
+                </div>
+                <div class="imagmn2">
+                    <a href="./artisant.html">Ou trouver ?</a>
+                </div>
+            </div>
+            <div class="mnimage">
+                <div class="imagmn1">
+                    <img src="./apro.png"  width="20px" alt="">
+                </div>
+                <div class="imagmn2">
+                    <a href="./acceuil.html#footer">A propos</a>
+                </div>
+            </div>
+            <div class="mnimage">
+                <div class="imagmn1">
+                    <img src="./te.png"  width="20px" alt="">
+                </div>
+                <div class="imagmn2">
+                    <a href="./acceuil.html#footer">Contact</a>
+                </div>
+            </div>
+            <!-- cette div profil sort si un artisant sincrit, il peut voir l'option profil -->
+            <div class="mnimage">
+                <div class="imagmn1">
+                    <img src="./profil.png"  width="20px" alt="">
+                </div>
+                <div class="imagmn2">
+                    <a href="#">Mon profil</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!-- Le formulaire inscription a lacceuil -->
+    <div class="inscripacceuil">
+        <form action="" method="post" id="formulaire">
+            <div class="imageforme">
+                <div class="unecroix" onclick="oncache('inscripacceuil')" >
+                    <img src="./croix.png" style="filter: invert();" width="30px" alt="">
+                </div>
+            </div>
+            <div class="inforforme">
+                <div class="deuxcroix" onclick="oncache('inscripacceuil')">
+                    <img src="./croix.png" style="filter: invert();" width="30px" alt="">
+                </div>
+                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 20px;padding-top: 10px;font-size: 1.8rem;">Vous etes artisant pro ?</h1>
+                <p style="color: gray;">Nous pouvons vous trouver des clients rapidement !</p>
+                <div class="deuximp">
+                    <input type="text" name="" id="" placeholder="Nom & Prenom">
+                    <input type="text" name="" id="" placeholder="Nationalite">
+                </div>
+                <div class="deuximp2">
+                    <input type="text" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Numero telephone">
+                </div>
+               
+                <input type="text" name="" id="" placeholder="Lieu d'habitation">
+                <input type="text" name="" id="" placeholder="Domaine d'activité">
+                
+                <input type="text" name="" id="" placeholder="Cout moyen par prestation">
+                <textarea name="" id="texteenvoi" placeholder="Parlez nous un peu de vous " ></textarea>
+                <div class="boutondenvoi">
+                    <button type="submit" id="leboutondenvoi">S'enregistrer</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    <!-- le contenue de page acceuil -->
+    <section id="acceuil">
+        <div class="inforacceuil">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 10px;padding-bottom: 10px;text-align: center;padding-top: 10px;color: white;">TROUVER UN ARTISANT !</h1>
+            <p style=" padding-left: 10px;padding-bottom: 40px;text-align: center;color: white;font-size: 1rem;">Pour rénover, construire ou agrandir dans le Doubs</p>
+        </div>
+        
+        <div class="messageacceuil">
+            
+            <div class="rechercheTelephone">
+                <div class="logorecher">
+                    <div class="imags">
+                        <img src="./search.png" width="25px" alt="">
+                    </div>
+                    <div class="resteunpi">
+                        <p style="font-size: 0.7rem;color:gray;">Choisir un corps de métier maintenant !</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="rechercheOrdina">
+                <div class="logorecher">
+                    <div class="imags">
+                        <img src="./search.png" width="25px" alt="">
+                    </div>
+                    <div class="resteunpi">
+                        <p style="font-size: 0.7rem;color:gray;">Choisir un corps de métier maintenant !</p>
+                    </div>
+                   
+                </div>
+                
+            </div>
+            <div class="listesdemetier">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./artrecher.html">Agriculturew</a>
+                        </li>
+                        <li>
+                            <a href="./artrecher.html">Menusierie</a>
+                        </li>
+                        <li>
+                            <a href="./artrecher.html">Electricité</a>
+                        </li>
+                        <li>
+                            <a href="./artrecher.html">Maconnerie</a>
+                        </li>
+                        <li>
+                            <a href="./artrecher.html">Mecanique</a>
+                        </li>
+                        <li>
+                            <a href="./artrecher.html">Peinture</a>
+                        </li>
+                        <li>
+                            <a href="./artrecher.html">Couture</a>
+                        </li>
+                        <li>
+                            <a href="./artrecher.html">Plomberie</a>
+                        </li>
+                        <li>
+                            <a href="./artrecher.html">Sculture</a>
+                        </li>
+                        <li>
+                            <a href="./artrecher.html">Demolition</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            
+
+        </div>
+    </section>
+    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 10px;padding-bottom: 10px;text-align: center;color: black;font-size: 1.5rem;padding-right: 10px;">Avec <span style="color: rgb(93, 144, 93);font-weight: bolder;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Atizan.Moko</span>, trouvez facilement
+        Tous les PROS pour vos Travaux dans Votre Ville</p>
+    <section id="apropos">
+        <div class="categorie">
+            <a href="./artrecher.html" class="catego1">
+                    <div class="qws">
+                        <!-- <div class="qwimage">
+
+                        </div> -->
+                        <img src="./planteur.png"  style="filter: invert();"  width="75px" alt=""> 
+                    </div>
+                    
+            </a>
+            <a href="./artrecher.html" class="catego2">
+                <div class="qws">
+                    <!-- <div class="qwimage">
+
+                    </div> -->
+                    <img src="./mecanicien.png"  style="filter: invert();"  width="75px" alt=""> 
+                </div>
+                
+            </a>
+            <a href="./artrecher.html" class="catego3">
+                <div class="qws">
+                    <!-- <div class="qwimage">
+
+                    </div> -->
+                    <img src="./menusier.png"  style="filter: invert();"  width="75px" alt=""> 
+                </div>
+            </a>
+            <a href="./artrecher.html" class="catego4">
+                <div class="qws">
+                    <!-- <div class="qwimage">
+
+                    </div> -->
+                    <img src="./plombier.png"  style="filter: invert();"  width="75px" alt=""> 
+                </div>
+            </a>
+            <a href="./artrecher.html" class="catego5">
+                <div class="qws">
+                    <!-- <div class="qwimage">
+
+                    </div> -->
+                    <img src="./couturier.png"  style="filter: invert();"  width="75px" alt=""> 
+                </div>
+            </a>
+            <a href="./artrecher.html" class="catego6">
+                <div class="qws">
+                    <!-- <div class="qwimage">
+
+                    </div> -->
+                    <img src="./peintre.png"  style="filter: invert();"  width="75px" alt=""> 
+                </div>
+            </a>
+            <a href="./artrecher.html" class="catego7">
+                <div class="qws">
+                    <!-- <div class="qwimage">
+
+                    </div> -->
+                    <img src="./vase.png"  style="filter: invert();"  width="75px" alt=""> 
+                </div>
+            </a>
+            <a href="./artrecher.html" class="catego11">
+                <div class="qws">
+                    <!-- <div class="qwimage">
+
+                    </div> -->
+                    <img src="./macon.png"  style="filter: invert();"  width="75px" alt=""> 
+                </div>
+            </a>
+            <a href="./artrecher.html" class="catego9">
+                <div class="qws">
+                    <!-- <div class="qwimage">
+
+                    </div> -->
+                    <img src="./demolition.png"  style="filter: invert();"  width="75px" alt=""> 
+                </div>
+            </a>
+            <a href="./artrecher.html" class="catego10">
+                <div class="qws">
+                    <!-- <div class="qwimage">
+
+                    </div> -->
+                    <img src="./electricien.png"  style="filter: invert();"  width="75px" alt=""> 
+                </div>
+            </a>
+           
+           
+            
+        </div>
+        
+    </section >
+    <section id="footer">
+        <img src="./fiable.png" width="100px" alt="">
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-left: 10px;padding-bottom: 50px;text-align: center;padding-top: 10px;color: black;font-size: 1.5rem;padding-right: 10px;">Vous êtes un professionnel des travaux ?
+            Avec <span style="color: rgb(120, 176, 120);font-weight: bolder;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Atizan.Moko</span>, trouvez rapidement
+            des Nouveaux Clients</p>
+        <div id="inscripArti" onclick="ouvrie('inscripacceuil')" > 
+            <h1  style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: white;">INSCRIVEZ - VOUS</h1>
+        </div>
+    </section>
+    <section id="vraifooetr">
+        <div class="monlogoetmessage">
+            <div class="logore1">
+                <div class="logore12">
+                    <p style="color: green;font-size: 1.5rem;text-align: start;padding-bottom: 30px;"><span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        ">A</span>tizan<span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        ">M</span>OKO</p>
+                    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 20px;padding-top: 10px;font-size: 1.3rem;">A propos de nous</h1>
+                    <p style="color: rgb(181, 181, 181);font-size: 0.8rem;"><span style="color: green;font-size: 0.8rem;text-align: start;padding-bottom: 30px;"><span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        ">A</span>tizan<span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        ">M</span>OKO</span> est le premier magazine premium gratuit qui donne la parole aux artisans du bâtiment. Sa ligne éditoriale est axée sur l’artisanat du bâtiment et tous les métiers périphériques de l’habitat.
+
+                        Son concept est simple : donner la parole aux artisans sous forme d’interviews afin de réaliser un instantané valorisant leurs motivations, leurs choix, leurs spécialités, leurs conseils et leurs valeurs ajoutées. <br>
+                       
+                        <span><span style="color: green;font-size: 0.8rem;text-align: start;padding-bottom: 30px;"><span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            ">A</span>tizan<span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            ">M</span>OKO</span></span>
+                         présente une image juste et pertinente de ces hommes et ces femmes qui font l’artisanat du bâtiment au quotidien.
+                        
+                        À qui s’adresse
+                        <span><span style="color: green;font-size: 0.8rem;text-align: start;padding-bottom: 30px;"><span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            ">A</span>tizan<span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            ">M</span>OKO</span></span> ?
+                        <br>
+                        
+                        <span><span style="color: green;font-size: 0.8rem;text-align: start;padding-bottom: 30px;"><span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            ">A</span>tizan<span style="color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            ">M</span>OKO</span></span>
+                        est un magazine professionnel, édité à destination des particuliers désireux de faire construire, rénover ou agrandir leur habitat. Le magazine est également lu par les professionnels du secteur du bâtiment.
+                        
+                        Il répond à une question simple : comment trouver les artisans du bâtiment de qualité ?</p>
+                    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 20px;padding-top: 10px;font-size: 1rem;">Merci bien !</h1>
+                   
+                </div>
+                
+            </div>
+            <div class="logore2">
+                <form action="" method="post" id="formulaire" >
+                    
+                    <div class="inforforme" >
+                        
+                        
+                        <p style="color: gray;font-size: 0.8rem;">
+                            Laissez nous un message, nous nous en chargerons !</p>
+                        <div class="deuximp">
+                            <input type="text" name="" id="" placeholder="Nom & Prenom">
+                            <input type="text" name="" id="" placeholder="Nationalite">
+                        </div>
+                        <div class="deuximp2">
+                            <input type="text" name="" id="" placeholder="Email">
+                            <input type="text" name="" id="" placeholder="Numero telephone">
+                        </div>
+                       
+                        <input type="text" name="" id="" placeholder="Lieu d'habitation">
+                        <textarea name="" id="texteenvoi" placeholder="Dites nous un peu de vous " ></textarea>
+                        <div class="boutondenvoi">
+                            <button type="submit" id="leboutondenvoi">Envoyer maintenant</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+    </section>
+    <div class="restedefooter">
+        <a href="" id="whatsappnumber"><img src="what.png"  width="35px" alt=""></a>
+        <a href="" id="whatsappnumber"><img src="fac.png" width="35px" alt=""></a>
+        <a href="" id="whatsappnumber"><img src="twe.png" width="35px" alt=""></a>
+        <a href="" id="whatsappnumber"><img src="inst.png" width="35px" alt=""></a>
+    </div>
+
+    <script src="./acceuil.js"></script>
+</body>
+</html>

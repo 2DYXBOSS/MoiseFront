@@ -1,0 +1,676 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: clamp(12px, 1.5vw, 14px); */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+input {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    width: 100%;
+    background-color: white;
+}
+@media (max-width:500px) {
+    #lavira {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+    .lavira1 {
+        width: 100%;
+      
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        background-color: white;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .lavira1 form{
+        width: 100%;
+        max-width: 350px;
+        padding-bottom: 20px;
+        background-color: white;
+        box-shadow: 1px 1px 10px 0.5px gainsboro;
+    }
+    .imaged1 {
+        height: 150px;
+        width: 100%;
+        background-color: red;
+    }
+    .imaged2 {
+    
+        width: 100%;
+      
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .imaged2 button{
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: green;
+        gap: 10px;
+        border: none;
+        color: white;
+    }
+}
+@media (min-width:500px) {
+    #lavira {
+        width: 100%;
+       
+        background-color: white;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .lavira1 {
+        width: 100%;
+        max-width: 1300px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        background-color: white;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .lavira1 form{
+        width: 100%;
+        max-width: 300px;
+        background-color: white;
+        box-shadow: 1px 1px 10px 0.5px gainsboro;
+        padding-bottom: 20px;
+    }
+    .imaged1 {
+        height: 150px;
+        width: 100%;
+        background-color: red;
+    }
+    .imaged2 {
+    
+        width: 100%;
+      
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    .imaged2 button{
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: green;
+        gap: 10px;
+        border: none;
+        color: white;
+    }
+}
+@media (min-width:1000px) {
+    .restedefooter {
+        height: 100px;
+        background-color: rgb(93, 144, 93);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .restedefooter a{
+        width: 50px;
+        height: 50px;
+    }
+    #acceuil {
+        height: 600px;
+        background: url(./acceuil.jpeg) 50% no-repeat;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: sticky;
+        top: -415px;
+        z-index: 99999;
+    }
+    .inforacceuil {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 250px;
+        font-size: 3rem;
+    }
+    .messageacceuil {
+        height: 130px;
+        background-color: white;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        color: rgb(9, 91, 8);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+    .rechercheTelephone {
+        display: none;
+    }
+    
+    .rechercheOrdina {
+        display: flex;
+    }
+    .listesdemetier {
+        height: 500px;
+        width: 96%;
+        background-color: white;
+        position: absolute;
+        display: none;
+    }
+    .messageacceuil:hover .listesdemetier {
+        height: 500px;
+        width: 96%;
+        background-color: white;
+        position: absolute;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        box-shadow: -1px 1px 4px 2px rgba(128, 128, 128, 0.152);
+        
+        gap: 20px;
+        
+    }
+    .listesdemetier nav a {
+        color: black;
+        padding: 50px 20px;
+        
+        
+    }
+    .listesdemetier nav{
+        color: black;
+        width: 100%;
+        
+    }
+    .listesdemetier ul{
+        color: black;
+        width: 100%;
+     
+    }
+    .listesdemetier li{
+        color: black;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+        list-style-type: none;
+
+        padding-left: 20px;
+    }
+    
+    .listesdemetier li:hover{
+        color: black;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: green;
+        list-style-type: none;
+        color: white;
+        padding-left: 20px;
+    }
+    .listesdemetier li:hover a{
+        color: black;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: green;
+        list-style-type: none;
+        color: white;
+        padding-left: 20px;
+    }
+    .messageacceuil input{
+        outline: none;
+        width: 65%;
+        height: 50px;
+        border-radius: 20px 0px 0px 20px;
+        border: 1px solid rgb(4, 102, 4);
+        background-color: rgba(4, 102, 4, 0.074);
+        padding-left: 25px;
+        margin-bottom: 15px;
+    }
+
+    .messageacceuil button{
+        outline: none;
+        width: 35%;
+        height: 50px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid rgb(4, 102, 4);
+        background-color: rgb(4, 102, 4);
+        margin-bottom: 15px;
+        color: white;
+    }
+    .logorecher {
+        width: 100%;
+        height: 50px;
+        /* background-color: red; */
+        margin-bottom: 10px;
+        display: flex;
+    }
+    .logorecher .resteunpi{
+        outline: none;
+        width: 100%;
+        height: 50px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid rgb(4, 102, 4);
+        background-color: rgba(4, 102, 4, 0.074);
+        padding-left: 10px;
+        margin-bottom: 15px;
+        border-left: none;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+    }
+    .imags {
+        width: 40px;
+        height: 50px;
+        background-color: rgba(4, 102, 4, 0.074);
+        /* background-color: red; */
+        border-radius: 20px 0px 0px 20px;
+        border: 1px solid rgb(4, 102, 4);
+        border-right: none;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .gramdmenu {
+        display: none;
+    }
+   
+    header {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 99999999;
+    }
+    .logo {
+        height: 50px;
+        width: 30%;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
+    .menuinfo {
+        height: 50px;
+        width: 70%;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 50px;
+    }
+    .menuinfo nav ul li a{
+        text-decoration: none;
+        padding: 13px 20px;
+        background-color: rgb(93, 144, 93);
+        color: white;
+    }
+    #artu {
+        text-decoration: none;
+        padding: 13px 20px;
+        background-color: green;
+        color: rgb(255, 255, 255);
+    }
+    .menuinfo nav ul li a:hover{
+        text-decoration: none;
+        padding: 13px 20px;
+        background-color: green;
+        color: rgb(255, 255, 255);
+    }
+    .menuinfo nav ul li{
+        list-style-type: none;
+    }
+    .menuinfo nav ul {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .menuImage {
+        display: none;
+    }
+   
+}
+@media (max-width:1000px) {
+    .restedefooter {
+        height: 100px;
+        background-color: rgb(93, 144, 93);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .restedefooter a{
+        width: 50px;
+        height: 50px;
+    }
+    header {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 99999999;
+    }
+    .logo {
+        height: 50px;
+        width: 70%;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
+    .menuinfo {
+        display: none;
+    }
+    .menuImage {
+        height: 50px;
+        width: 30%;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 30px;
+        
+    }
+
+
+    .gramdmenu  {
+        display: none;
+    }
+    .gramdmenu.active  {
+        position: fixed;
+        width: 100%;
+        height: 800px;
+        z-index: 999999;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+        
+        padding-top: 45px;
+    }
+
+    .menuhambeur{
+        display: flex;
+        flex-direction: column;
+        /* height: 400px; */
+        width: 300px;
+        background-color: rgb(93, 144, 93);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .mnimage {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+       
+        
+    }
+    .imagmn1 {
+        height: 100%;
+        width: 20%;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .imagmn2 {
+        height: 100%;
+        width: 80%;
+        background-color: rgb(93, 144, 93);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-left: 20px;
+        
+    }
+    #acce {
+        background-color: rgba(0, 128, 0, 0.457);
+    }
+    #acce .imagmn1{
+        background-color: rgba(0, 128, 0, 0.457);
+    }
+    #acce .imagmn2{
+        background-color: rgba(0, 128, 0, 0.457);
+    }
+    #acce a {
+        color: white;
+        
+    }
+    #acce img{
+        filter: invert();
+        
+    }
+    .mnimage:hover .imagmn1{
+        background-color: rgba(0, 128, 0, 0.457);
+        
+    }
+    .mnimage:hover .imagmn2{
+        background-color: rgba(0, 128, 0, 0.457);
+        
+    }
+    .mnimage:hover a {
+        color: white;
+        
+    }
+    .mnimage:hover img{
+        filter: invert();
+        
+    }
+    .imagmn2 a{
+        color: black;
+        
+    }
+    .imagmn2 a{
+        color: black;
+        
+    }
+    #acceuil {
+        height: 350px;
+        background: url(./acceuil.jpeg) 50% no-repeat;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: sticky;
+        top: -175px;
+        z-index: 99999;
+    }
+    .inforacceuil {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .messageacceuil {
+        height: 120px;
+        background-color: white;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        color: rgb(9, 91, 8);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+       
+    }
+    .messageacceuil input{
+        outline: none;
+        width: 100%;
+        height: 50px;
+        border-radius: 20px;
+        border: 1px solid rgb(4, 102, 4);
+        background-color: rgba(4, 102, 4, 0.074);
+        padding-left: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .messageacceuil button{
+        outline: none;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid rgb(4, 102, 4);
+        background-color: rgb(4, 102, 4);
+        padding-left: 25px;
+        margin-bottom: 15px;
+        color: white;
+    }
+    
+    .logorecher {
+        width: 100%;
+        height: 50px;
+        /* background-color: red; */
+        margin-bottom: 10px;
+        display: flex;
+    }
+    .logorecher .resteunpi{
+        outline: none;
+        width: 100%;
+        height: 50px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid rgb(4, 102, 4);
+        background-color: rgba(4, 102, 4, 0.074);
+        padding-left: 10px;
+        margin-bottom: 15px;
+        border-left: none;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+    }
+    .imags {
+        width: 40px;
+        height: 50px;
+        background-color: rgba(4, 102, 4, 0.074);
+        /* background-color: red; */
+        border-radius: 20px 0px 0px 20px;
+        border: 1px solid rgb(4, 102, 4);
+        border-right: none;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .rechercheOrdina {
+        display: none;
+    }
+    .rechercheTelephone {
+        display: block;
+        
+    }
+    .listesdemetier {
+        height: 500px;
+        width: 96%;
+        background-color: white;
+        position: absolute;
+        display: none;
+    }
+    .messageacceuil:hover .listesdemetier {
+        height: 500px;
+        width: 96%;
+        background-color: white;
+        position: absolute;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        box-shadow: -1px 1px 4px 2px rgba(128, 128, 128, 0.152);
+        
+        gap: 20px;
+        
+    }
+    .listesdemetier nav a {
+        color: black;
+        padding: 50px 20px;
+        
+        
+    }
+    .listesdemetier nav{
+        color: black;
+        width: 100%;
+        
+    }
+    .listesdemetier ul{
+        color: black;
+        width: 100%;
+     
+    }
+    .listesdemetier li{
+        color: black;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       
+        list-style-type: none;
+
+        padding-left: 20px;
+    }
+    
+    .listesdemetier li:hover{
+        color: black;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: green;
+        list-style-type: none;
+        color: white;
+        padding-left: 20px;
+    }
+    .listesdemetier li:hover a{
+        color: black;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: green;
+        list-style-type: none;
+        color: white;
+        padding-left: 20px;
+    }
+    
+}
+
+
+
+
